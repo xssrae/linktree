@@ -1,4 +1,3 @@
-// Seleciona os elementos do DOM
 const playPauseButton = document.getElementById('play-pause-button');
 const musicPlayer = document.getElementById('music-player');
 const playIcon = document.getElementById('play-icon');
