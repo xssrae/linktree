@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
 
-body { 
-  background-color: #0E0C15; 
+body {
+  background-color: #0E0C15;
   margin: 0;
   padding: 0;
 }
@@ -12,12 +12,18 @@ body {
   background-color: #0E0C15;
   padding: 4vh;
   box-sizing: border-box;
-  h1,h2,h3 { color: #D7CCFF; }
-  ul { list-style-type: "✦ "; }
+
+  h1,h2,h3 {
+    color: #D7CCFF;
+  }
+
+  ul {
+    list-style-type: "✦";
+  }
 }
 
-#mainbox h1, #mainbox h3 { 
-  color: #D7CCFF; 
+#mainbox h1, h3 {
+  color: #D7CCFF;
   font-weight: 500;
 }
 
@@ -33,7 +39,7 @@ body {
 }
 
 .button-container {
-  list-style-type: none; 
+  list-style-type: none;
   padding: 0;
   margin: 2rem 0;
   display: flex;
@@ -71,8 +77,8 @@ body {
   margin: 0 auto;
 }
 
-.logo:hover { 
-  transform: rotate(360deg); 
+.logo:hover {
+  transform: rotate(360deg);
 }
 
 .socials a {
@@ -94,36 +100,78 @@ body {
   transition: fill 0.3s ease;
 }
 
-.socials a:hover svg { 
-  fill: #e7ceff; 
+.socials a:hover svg {
+  fill: #e7ceff;
+}
+
+#player-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #0e0c15e6;
+  border: 2px solid #A387FF;
+  border-radius: 10px;
+  padding: 5px 10px;
+  z-index: 100;
+  backdrop-filter: blur(5px);
 }
 
 #play-pause-button {
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  width: 50px;
-  height: 50px;
-  border: 3px solid #A387FF;
+  width: 40px;
+  height: 40px;
+  border: none;
   border-radius: 100%;
-  background-color: #0E0C15;
+  background-color: transparent;
   color: #cf87ff;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
-  z-index: 100;
+  flex-shrink: 0;
 }
 
 #play-pause-button:hover {
-  background-color: #A387FF;
-  color: #0E0C15;
+  background-color: #a387ff2a;
 }
 
 #play-pause-button svg {
   width: 50%;
   height: 50%;
+}
+
+#volume-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100px;
+  height: 5px;
+  background: #a387ff55;
+  border-radius: 5px;
+  outline: none;
+  transition: opacity 0.2s;
+}
+
+#volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #cf87ff;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #0E0C15;
+}
+
+#volume-slider::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #cf87ff;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #0E0C15;
 }
 
 @media screen and (min-width: 900px) {

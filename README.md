@@ -1,6 +1,6 @@
 # rae's links
 
-![rae-land](https://github.com/xssrae/rae-land/blob/dev/assets/rae-land.png)
+![preview](https://github.com/xssrae/rae-land/blob/dev/assets/rae-land.png)
 
 sitezinho básico para guardar meus links e afins!
 
