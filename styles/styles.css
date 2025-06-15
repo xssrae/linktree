@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+
+/* mobile solid background */
+
+body { 
+  background-color: #0E0C15; 
+  margin: 0;
+  padding: 0;
+
+}
+
+/* ---- CONTAINER PRINCIPAL ---- */
+#mainbox {
+  color: #A387FF;
+  font-family: "Gabarito", sans-serif;
+  background-color: #0E0C15;
+  padding: 4vh;
+  box-sizing: border-box;
+  h1,h2,h3 { color: #D7CCFF; }
+  ul { list-style-type: "✦ "; }
+}
+
+/* ---- TEXTO ---- */
+#mainbox h1, #mainbox h3 { 
+  color: #D7CCFF; 
+  font-weight: 500;
+}
+
+#mainbox h1 {
+  font-size: 2.5em;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#mainbox h3 {
+  font-size: 1.2em;
+  margin: 0.5rem 0;
+}
+
+/* ---- CONTAINER DOS BOTÕES ---- */
+.button-container {
+  list-style-type: none; 
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap; /* Para telas pequenas */
+  justify-content: center;
+  gap: 1.5rem; /* Espaço entre os botões */
+}
+
+/* ---- Estilo dos links como botões ---- */
+.button-container a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 3px solid #A387FF;
+  border-radius: 15px;
+  background-color: transparent;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #A387FF;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.button-container a:hover {
+  background-color: #beace9;
+  color: #0E0C15; /* Inverter cores no hover */
+}
+
+/* ---- LOGO ---- */
+.logo {
+  width: 12vh;
+  height: 12vh;
+  min-width: 90px; /* Tamanho mínimo para telas pequenas */
+  min-height: 90px;
+  border: 5px solid #A387FF;
+  border-radius: 100%;
+  transition: transform 750ms ease-in-out;
+  margin: 0 auto;
+}
+
+.logo:hover { 
+  transform: rotate(360deg); 
+}
+
+/* ---- LINKS E ÍCONES SOCIAIS ---- */
+.socials a {
+  text-decoration: none;
+}
+
+.socials {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.socials a svg {
+  width: 4vh;
+  height: 4vh;
+  min-width: 25px; /* Tamanho mínimo */
+  min-height: 25px;
+  margin: 0 1vh;
+  fill: #A387FF;
+  transition: fill 0.3s ease;
+}
+
+.socials a:hover svg { 
+  fill: #e7ceff; 
+}
+
+/* ---- PLAYER DE MÚSICA ---- */
+#play-pause-button {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #A387FF;
+  border-radius: 100%;
+  background-color: #0E0C15;
+  color: #cf87ff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+#play-pause-button:hover {
+  background-color: #A387FF;
+  color: #0E0C15;
+}
+
+#play-pause-button svg {
+  width: 50%;
+  height: 50%;
+}
+
+/* ---- LAYOUT DESKTOP ---- */
+@media screen and (min-width: 900px) {
+  body {
+    background-image: url('/assets/space.gif');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  #mainbox {
+    width: 40%;
+    height: 40%;
+    margin: 10% auto 10% auto;
+    word-wrap: break-word;
+    border: 5px solid #A387FF;
+    border-radius: 20px;
+  }
+}
